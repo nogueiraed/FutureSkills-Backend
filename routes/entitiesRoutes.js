@@ -1,5 +1,3 @@
-//http://localhost:3001/routes/entitiesRoutes.js
-
 const express = require("express");
 const router = express.Router();
 const EntitiesController = require("../controllers/EntitiesController");
@@ -7,7 +5,7 @@ const EntitiesController = require("../controllers/EntitiesController");
 const entitiesController = new EntitiesController();
 const isAuthenticated = require("../middleware/auth");
 
-// DAILY WORKSHEETS
+
 router.get('/dailyWorksheet', entitiesController.getAllDailyWorksheets);
 router.get('/dailyWorksheet/:id', entitiesController.getDailyWorksheetById);
 router.post('/dailyWorksheet', entitiesController.createDailyWorksheet);

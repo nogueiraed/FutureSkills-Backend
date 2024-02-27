@@ -1,5 +1,3 @@
-//http://localhost:3001/middleware/auth.js
-
 const jwt = require("jsonwebtoken");
 const { JWT_KEY } = require("../constants");
 

@@ -1,5 +1,4 @@
-//http://localhost:3001/server.js
-console.log("Iniciando o servidor...");
+console.log("Starting the server...");
 
 const express = require("express");
 const cors = require("cors");

@@ -43,7 +43,7 @@ class DailyWorksheet {
         dailyWorksheetData.jobNumber,
         dailyWorksheetData.poNumber,
         dailyWorksheetData.teamLeader,
-        JSON.stringify(dailyWorksheetData.cleaners), // Convertendo array para JSON
+        JSON.stringify(dailyWorksheetData.cleaners),
         dailyWorksheetData.contractType,
         dailyWorksheetData.workDescription,
         dailyWorksheetData.extraProduct
@@ -81,7 +81,7 @@ class DailyWorksheet {
         updatedDw.jobNumber,
         updatedDw.poNumber,
         updatedDw.teamLeader,
-        JSON.stringify(updatedDw.cleaners), // Convertendo array para JSON
+        JSON.stringify(updatedDw.cleaners),
         updatedDw.contractType,
         updatedDw.workDescription,
         updatedDw.extraProduct,

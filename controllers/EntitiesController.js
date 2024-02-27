@@ -1,7 +1,4 @@
-// http://localhost:3001/controllers/EntitiesController.js
-
 const DailyWorksheet = require("../model/entities/dailyWorksheet");
-
 const dailyWorksheet = new DailyWorksheet();
 
 class EntitiesController {

@@ -1,8 +1,4 @@
-//http://localhost:3001/model/database.js
-
 const mysql = require("mysql2/promise");
-
-//DATABASE NA CLOUD
 class Database {
   constructor() {
     this.pool = mysql.createPool({
@@ -29,10 +25,10 @@ class Database {
         console.log("Conexão adquirida com sucesso");
         const [results] = await connection.query(sql, params);
         console.log("Consulta SQL executada com sucesso:", sql, "Parametros:", params, "Resultados:", results);
-        return results.affectedRows; // Retornar o número de linhas afetadas
+        return results.affectedRows;
     } catch (error) {
         console.error("Erro ao executar consulta SQL:", error);
-        throw error; // Re-throw the error to be caught by the caller
+        throw error; 
     } finally {
         connection.release();
         console.log("Conexão liberada");

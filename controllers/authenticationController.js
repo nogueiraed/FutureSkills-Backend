@@ -1,5 +1,3 @@
-//http://localhost:3001/controllers/authenticationController.js
-
 const jwt = require("jsonwebtoken");
 const { JWT_KEY } = require("../constants");
 const Database = require("../model/database");
